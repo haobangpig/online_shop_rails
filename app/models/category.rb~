@@ -1,4 +1,4 @@
-class Category < ApplicationRecord
+class Category < ApplicationRecordo
   has_ancestry
   has_many :products, dependent: :destroy
 end

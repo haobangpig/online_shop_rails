@@ -8,6 +8,8 @@ module OnlineShop
   class Application < Rails::Application
     config.load_defaults 5.2
 
+    config.autoload_paths += %W(#{config.root}/lib)
+
     config.generators do |generator|
       generator.assets false
       generator.test_framework false
